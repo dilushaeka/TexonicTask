@@ -16,8 +16,8 @@ public class DesignationDAOImpl implements DesignationDAO {
 
     @Override
     public boolean add(Designation ID) throws ClassNotFoundException, SQLException {
-        String sql = "insert into designation values(?,?,?)";
-        return CrudUtil.executeUpdate(sql, ID.getDesID(),ID.getName(),ID.getRemark());
+        String sql = "insert into designation values(?,?)";
+        return CrudUtil.executeUpdate(sql, ID.getName(),ID.getRemark());
 
     }
 

@@ -14,6 +14,8 @@ import lk.texonic.bo.custom.DesignationBO;
 import lk.texonic.bo.custom.impl.DesignationBOImpl;
 import lk.texonic.dto.DesignationDTO;
 
+import java.sql.SQLException;
+
 public class DesignationController {
     public JFXTextField txtDes;
     public JFXTextField txtEmpName;
@@ -24,11 +26,13 @@ public class DesignationController {
     public TableColumn colRemark;
 
     DesignationBO designationBO=new DesignationBOImpl();
-    public void addOnAction(ActionEvent actionEvent) {
+    public void addOnAction(ActionEvent actionEvent) throws SQLException{
         try {
             boolean isAdded= designationBO.addDesignation(new DesignationDTO(
                     txtDes.getText(),
                     txtEmpName.getText()));
+        }catch (ClassNotFoundException e){
+
         }
     }
 

@@ -15,7 +15,7 @@ public class Designation {
     public Designation() {
     }
 
-    public Designation(int desID, String name, String remark) {
+    public Designation(String name, String remark) {
         this.desID = desID;
         this.name = name;
         this.remark = remark;

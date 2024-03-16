@@ -19,7 +19,7 @@ public class DesignationDTO {
                 '}';
     }
 
-    public DesignationDTO(int desID, String name, String remark) {
+    public DesignationDTO(int desID,String name, String remark) {
         this.desID = desID;
         this.name = name;
         this.remark = remark;
