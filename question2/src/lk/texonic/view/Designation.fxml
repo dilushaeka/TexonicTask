@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.texonic.controller.DesignationController">
+    <children>
+        <JFXTextField fx:id="txtDes" labelFloat="true" layoutX="21.0" layoutY="164.0" prefHeight="31.0" prefWidth="284.0" promptText="Designation" />
+        <JFXTextField fx:id="txtEmpName" labelFloat="true" layoutX="21.0" layoutY="108.0" prefHeight="31.0" prefWidth="284.0" promptText="Full Name" />
+        <JFXButton buttonType="RAISED" layoutX="590.0" layoutY="567.0" onAction="#addOnAction" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #4b7bec;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font></JFXButton>
+        <Pane prefHeight="78.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom left, #c91306,  #7d7777,#0d0c0c);">
+         <children>
+            <Label layoutX="149.0" layoutY="4.0" prefHeight="46.0" prefWidth="241.0" text="Designation" textFill="#fffafa" />
+         </children></Pane>
+        <TableView fx:id="tblDesignation" layoutX="10.0" layoutY="231.0" onMousePressed="#tblCashierClick" prefHeight="315.0" prefWidth="780.0">
+            <columns>
+                <TableColumn fx:id="colCashId" maxWidth="-Infinity" prefWidth="195.0" text="Cashier ID" />
+                <TableColumn fx:id="colId" prefWidth="156.0" text=" ID " />
+                <TableColumn fx:id="colName" prefWidth="400.0" text="Name" />
+                <TableColumn fx:id="colRemark" prefWidth="210.0" text="Remark" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="361.0" layoutY="567.0" onAction="#resetOnAction" prefHeight="57.0" prefWidth="136.0" style="-fx-background-color: #0fb9b1;" text="Reset" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/question2/src/lk/texonic/lib/TrayTester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/question2/src/lk/texonic/lib/AnimateFX-1.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/question2/src/lk/texonic/lib/jfoenix-8.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

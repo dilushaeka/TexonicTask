@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.texonic.controller.ViewEmployeeController">
+    <children>
+        <JFXButton buttonType="RAISED" layoutX="559.0" layoutY="104.0" onAction="#addOnAction" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #4b7bec;" text="Add" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font></JFXButton>
+        <Pane prefHeight="78.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom left, #c91306,  #7d7777,#0d0c0c);">
+         <children>
+            <Label layoutX="115.0" layoutY="29.0" text="View Employee" textFill="#ebebeb" />
+         </children></Pane>
+        <TableView fx:id="tblEmployee" layoutX="14.0" layoutY="224.0" onMousePressed="#tblCashierClick" prefHeight="315.0" prefWidth="780.0">
+            <columns>
+                <TableColumn fx:id="colEmpId" prefWidth="93.0" text="Emp ID " />
+                <TableColumn fx:id="colDesig" prefWidth="123.0" text="Designation" />
+                <TableColumn fx:id="colFirstname" prefWidth="176.0" text="First Name" />
+                <TableColumn fx:id="colLastName" prefWidth="208.0" text="Last Name" />
+                <TableColumn fx:id="colDateJoin" prefWidth="179.0" text="Date Join" />
+            </columns>
+        </TableView>
+        <StackPane layoutX="422.0" layoutY="186.0" prefHeight="45.0" prefWidth="137.0" />
+        <JFXButton buttonType="RAISED" layoutX="361.0" layoutY="104.0" onAction="#refreshOnAction" prefHeight="57.0" prefWidth="136.0" style="-fx-background-color: #0fb9b1;" text="refresh" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
